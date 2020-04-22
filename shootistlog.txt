@@ -1,0 +1,265 @@
+<!-- Use the  Trace Viewer in src/tools/tracesviewer to view this  trace  
+Here are the stack configuration properties 
+javax.sip.IP_ADDRESS= null
+javax.sip.STACK_NAME= shootist
+javax.sip.ROUTER_PATH= null
+javax.sip.OUTBOUND_PROXY= remoteIP:5060/udp
+-->
+<description
+ logDescription="shootist"
+ name="shootist"
+ auxInfo="null"/>
+ 
+<message
+from="192.168.0.102:5080" 
+to="remoteIP:5060" 
+time="1587542034516"
+isSender="true" 
+transactionId="z9hg4bk-3431-031f461366a9df92c0fc4b23a225d071" 
+callId="adc9e9fa2d37c7c02dc003b1428d6684@192.168.0.102" 
+firstLine="REGISTER sip:fromUser@remoteIP:5060 SIP/2.0" 
+>
+<![CDATA[REGISTER sip:fromUser@remoteIP:5060 SIP/2.0
+Call-ID: adc9e9fa2d37c7c02dc003b1428d6684@192.168.0.102
+CSeq: 1 REGISTER
+From: <sip:fromUser@remoteIP>
+To: <sip:fromUser@remoteIP>
+Via: SIP/2.0/UDP 192.168.0.102:5080;rport;branch=z9hG4bK-3431-031f461366a9df92c0fc4b23a225d071
+Max-Forwards: 70
+Contact: <sip:fromUser@192.168.0.102:5080;transport=udp>
+Expires: 300
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="remoteIP:5060" 
+to="192.168.0.102:5080" 
+time="1587542034725"
+isSender="false" 
+transactionId="z9hg4bk-3431-031f461366a9df92c0fc4b23a225d071" 
+callId="adc9e9fa2d37c7c02dc003b1428d6684@192.168.0.102" 
+firstLine="SIP/2.0 401 Unauthorized" 
+>
+<![CDATA[SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 192.168.0.102:5080;branch=z9hG4bK-3431-031f461366a9df92c0fc4b23a225d071;received=49.207.51.24;rport=10593
+From: <sip:fromUser@remoteIP>
+To: <sip:fromUser@remoteIP>
+Call-ID: adc9e9fa2d37c7c02dc003b1428d6684@192.168.0.102
+CSeq: 1 REGISTER
+WWW-Authenticate: Digest realm="remoteIP",nonce="4b531833cf31296102f4a728"
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="192.168.0.102:5080" 
+to="remoteIP:5060" 
+time="1587542034759"
+isSender="true" 
+transactionId="z9hg4bk-3431-93d10fdd240645de21dfef71e2a7d060" 
+callId="adc9e9fa2d37c7c02dc003b1428d6684@192.168.0.102" 
+firstLine="REGISTER sip:fromUser@remoteIP:5060;maddr=remoteIP SIP/2.0" 
+>
+<![CDATA[REGISTER sip:fromUser@remoteIP:5060;maddr=remoteIP SIP/2.0
+Call-ID: adc9e9fa2d37c7c02dc003b1428d6684@192.168.0.102
+CSeq: 2 REGISTER
+From: <sip:fromUser@remoteIP>
+To: <sip:fromUser@remoteIP>
+Via: SIP/2.0/UDP 192.168.0.102:5080;rport;branch=z9hG4bK-3431-93d10fdd240645de21dfef71e2a7d060
+Max-Forwards: 70
+Contact: <sip:fromUser@192.168.0.102:5080;transport=udp>
+Expires: 300
+Authorization: Digest username="fromUser",realm="remoteIP",nonce="4b531833cf31296102f4a728",uri="sip:fromUser@remoteIP:5060;maddr=remoteIP",response="dfdb08dcd81729e9ee2454b7ac243d6a"
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="remoteIP:5060" 
+to="192.168.0.102:5080" 
+time="1587542034897"
+isSender="false" 
+transactionId="z9hg4bk-3431-93d10fdd240645de21dfef71e2a7d060" 
+callId="adc9e9fa2d37c7c02dc003b1428d6684@192.168.0.102" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.102:5080;branch=z9hG4bK-3431-93d10fdd240645de21dfef71e2a7d060;received=49.207.51.24;rport=10593
+From: <sip:fromUser@remoteIP>
+To: <sip:fromUser@remoteIP>
+Call-ID: adc9e9fa2d37c7c02dc003b1428d6684@192.168.0.102
+CSeq: 2 REGISTER
+Contact: <sip:fromUser@49.207.51.24:10593;transport=udp>
+Expires: 60
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="192.168.0.102:5080" 
+to="remoteIP:5060" 
+time="1587542037529"
+isSender="true" 
+transactionId="z9hg4bk-3431-87c0133686aa0cd66d5bd5a285d2fea9" 
+callId="161ef3d46ab165b25e0e2056f61bc606@192.168.0.102" 
+firstLine="INVITE sip:toUser@remoteIP:5060 SIP/2.0" 
+>
+<![CDATA[INVITE sip:toUser@remoteIP:5060 SIP/2.0
+Call-ID: 161ef3d46ab165b25e0e2056f61bc606@192.168.0.102
+CSeq: 1 INVITE
+From: "fromUser" <sip:fromUser@remoteIP>
+To: "toUser" <sip:toUser@remoteIP>
+Via: SIP/2.0/UDP 192.168.0.102:5080;branch=z9hG4bK-3431-87c0133686aa0cd66d5bd5a285d2fea9
+Max-Forwards: 70
+Contact: <sip:fromUser@192.168.0.102:5080>
+My-Header: my header value
+Content-Type: application/sdp
+My-Other-Header: my new header value
+Call-Info: <http://www.antd.nist.gov>
+Content-Length: 355
+
+]]>
+</message>
+
+<message
+from="remoteIP:5060" 
+to="192.168.0.102:5080" 
+time="1587542037679"
+isSender="false" 
+transactionId="z9hg4bk-3431-87c0133686aa0cd66d5bd5a285d2fea9" 
+callId="161ef3d46ab165b25e0e2056f61bc606@192.168.0.102" 
+firstLine="SIP/2.0 100 Trying" 
+>
+<![CDATA[SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 192.168.0.102:5080;branch=z9hG4bK-3431-87c0133686aa0cd66d5bd5a285d2fea9;received=49.207.51.24
+Call-ID: 161ef3d46ab165b25e0e2056f61bc606@192.168.0.102
+From: "fromUser" <sip:fromUser@remoteIP>
+To: "toUser" <sip:toUser@remoteIP>;tag=283973ea0c42e8f2
+CSeq: 1 INVITE
+Server: SIPSERVER V2.1.7.01
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="remoteIP:5060" 
+to="192.168.0.102:5080" 
+time="1587542037695"
+isSender="false" 
+transactionId="z9hg4bk-3431-87c0133686aa0cd66d5bd5a285d2fea9" 
+callId="161ef3d46ab165b25e0e2056f61bc606@192.168.0.102" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.102:5080;branch=z9hG4bK-3431-87c0133686aa0cd66d5bd5a285d2fea9;received=49.207.51.24
+Call-ID: 161ef3d46ab165b25e0e2056f61bc606@192.168.0.102
+From: "fromUser" <sip:fromUser@remoteIP>
+To: "toUser" <sip:toUser@remoteIP>;tag=283973ea0c42e8f2
+CSeq: 1 INVITE
+Contact: <sip:toUser@remoteIP:5060>
+Allow: INVITE,ACK,CANCEL,BYE,OPTIONS,INFO,UPDATE,PRACK
+Server: SIPSERVER V2.1.7.01
+Supported: linknat
+Content-Type: application/sdp
+Content-Length: 219
+
+]]>
+</message>
+
+<message
+from="remoteIP:5060" 
+to="192.168.0.102:5080" 
+time="1587542039693"
+isSender="false" 
+transactionId="z9hg4bk-3431-87c0133686aa0cd66d5bd5a285d2fea9" 
+callId="161ef3d46ab165b25e0e2056f61bc606@192.168.0.102" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.102:5080;branch=z9hG4bK-3431-87c0133686aa0cd66d5bd5a285d2fea9;received=49.207.51.24
+Call-ID: 161ef3d46ab165b25e0e2056f61bc606@192.168.0.102
+From: "fromUser" <sip:fromUser@remoteIP>
+To: "toUser" <sip:toUser@remoteIP>;tag=283973ea0c42e8f2
+CSeq: 1 INVITE
+Contact: <sip:toUser@remoteIP:5060>
+Allow: INVITE,ACK,CANCEL,BYE,OPTIONS,INFO,UPDATE,PRACK
+Server: SIPSERVER V2.1.7.01
+Supported: linknat
+Content-Type: application/sdp
+Content-Length: 219
+
+]]>
+</message>
+
+<message
+from="remoteIP:5060" 
+to="192.168.0.102:5080" 
+time="1587542043693"
+isSender="false" 
+transactionId="z9hg4bk-3431-87c0133686aa0cd66d5bd5a285d2fea9" 
+callId="161ef3d46ab165b25e0e2056f61bc606@192.168.0.102" 
+firstLine="SIP/2.0 200 OK" 
+>
+<![CDATA[SIP/2.0 200 OK
+Via: SIP/2.0/UDP 192.168.0.102:5080;branch=z9hG4bK-3431-87c0133686aa0cd66d5bd5a285d2fea9;received=49.207.51.24
+Call-ID: 161ef3d46ab165b25e0e2056f61bc606@192.168.0.102
+From: "fromUser" <sip:fromUser@remoteIP>
+To: "toUser" <sip:toUser@remoteIP>;tag=283973ea0c42e8f2
+CSeq: 1 INVITE
+Contact: <sip:toUser@remoteIP:5060>
+Allow: INVITE,ACK,CANCEL,BYE,OPTIONS,INFO,UPDATE,PRACK
+Server: SIPSERVER V2.1.7.01
+Supported: linknat
+Content-Type: application/sdp
+Content-Length: 219
+
+]]>
+</message>
+
+<message
+from="remoteIP:5060" 
+to="192.168.0.102:5080" 
+time="1587542046199"
+isSender="false" 
+transactionId="z9hg4bk78990f184143d109" 
+callId="161ef3d46ab165b25e0e2056f61bc606@192.168.0.102" 
+firstLine="BYE sip:fromUser@192.168.0.102:5080 SIP/2.0" 
+>
+<![CDATA[BYE sip:fromUser@192.168.0.102:5080 SIP/2.0
+Via: SIP/2.0/UDP remoteIP:5060;branch=z9hG4bK78990f184143d109
+Call-ID: 161ef3d46ab165b25e0e2056f61bc606@192.168.0.102
+From: "toUser" <sip:toUser@remoteIP>;tag=283973ea0c42e8f2
+To: "fromUser" <sip:fromUser@remoteIP>
+CSeq: 21701 BYE
+Max-Forwards: 70
+Content-Length: 0
+
+]]>
+</message>
+
+<message
+from="192.168.0.102:5080" 
+to="remoteIP:5060" 
+time="1587542046215"
+isSender="true" 
+transactionId="z9hg4bk78990f184143d109" 
+callId="161ef3d46ab165b25e0e2056f61bc606@192.168.0.102" 
+firstLine="SIP/2.0 481 Call leg/Transaction does not exist" 
+>
+<![CDATA[SIP/2.0 481 Call leg/Transaction does not exist
+CSeq: 21701 BYE
+Call-ID: 161ef3d46ab165b25e0e2056f61bc606@192.168.0.102
+From: "toUser" <sip:toUser@remoteIP>;tag=283973ea0c42e8f2
+To: "fromUser" <sip:fromUser@remoteIP>
+Via: SIP/2.0/UDP remoteIP:5060;branch=z9hG4bK78990f184143d109
+Content-Length: 0
+
+]]>
+</message>
+
